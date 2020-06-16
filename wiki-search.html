@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="wiki_search.js"></script>
+    <title>Wikipedia Search Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!--blank column on the left hand side-->
+            <div class="col" id="left-side">
+            </div>
+            <div class="col-6">
+                <h1 id="ourH1" class="text-center text-primary">Wikipedia search project</h1>
+                <p class="text-center">Search any term and this program will give the top 20 searches from Wikipedia for
+                    your search</p>
+                <!--get user input for the search through a form -->
+                <form action="" method="post">
+                    <div class="text-center">
+                        <label id="ourLabel" for="searchBox">Input Wikipedia search here: </label>
+                        <!--remember that id matches with the for of the label above and the name will be what is sent through the form -->
+                        <input type="text" name="ourData" id="searchBox">
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <button class="btn btn-primary" id="ourButton" type="submit">Click here to search</button>
+                    </div>
+                </form>
+                <br>
+                <div class="text-center">
+                    <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"> <button
+                            class="btn btn-primary" type="button">Click here for a random Wikipedia article</button></a>
+                </div>
+                <br>
+                <!-- changeIt is where the relevant json data for the search will go-->
+                <div id="changeIt"></div>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!--blank column on the right hand side-->
+            <div class="col" id="right-side">
+            </div>
+        </div>
+        <!--end of row div-->
+    </div>
+</body>
+
+</html>

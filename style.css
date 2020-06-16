@@ -1,0 +1,5 @@
+.well {
+    background-color: rgb(0, 247, 255);
+    /*make sure words wrap and don't go beyond the borders of the well*/
+    word-wrap: break-word;
+}
